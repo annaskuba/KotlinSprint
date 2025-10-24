@@ -5,7 +5,7 @@ const val PERCENT_FORMATTER = 100
 
 fun main() {
 
-    val buffCoefficient = BONUS_PERCENTAGE / PERCENT_FORMATTER
+    val buffCoefficient = BONUS_PERCENTAGE.toDouble() / PERCENT_FORMATTER
     val buffIsOn = true
     val crystalOre = 7
     val ironOre = 11
