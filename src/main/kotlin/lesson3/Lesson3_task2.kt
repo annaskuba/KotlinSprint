@@ -2,18 +2,16 @@ package org.example.lesson3
 
 fun main() {
 
-    val maidenSurname = "Андреева"
+    var surname = "Андреева"
     val name = "Татьяна"
     val patronymic = "Сергеевна"
-    val marriedSurname = "Сидорова"
-    val firstAge = 20
-    val secondAge = 22
+    var age = 20
 
-    val fullData = """
-        $maidenSurname $name $patronymic, $firstAge
-        $marriedSurname $name $patronymic, $secondAge
-    """.trimIndent()
+    println("$surname $name $patronymic, $age")
 
-    println(fullData)
+    surname = "Сидорова"
+    age = 22
+
+    println("$surname $name $patronymic, $age")
 
 }
