@@ -1,9 +1,11 @@
 package org.example.Lesson2
 
-const val BUFF_COEFFICIENT = 0.2
+const val BONUS_PERCENTAGE = 20
+const val PERCENT_FORMATTER = 100
 
 fun main() {
 
+    val buffCoefficient = BONUS_PERCENTAGE / PERCENT_FORMATTER
     val buffIsOn = true
     val crystalOre = 7
     val ironOre = 11
@@ -11,8 +13,8 @@ fun main() {
     var bonusIronOre = 0
 
     if (buffIsOn == true) {
-        bonusCrystalOre = (crystalOre * BUFF_COEFFICIENT).toInt()
-        bonusIronOre = (ironOre * BUFF_COEFFICIENT).toInt()
+        bonusCrystalOre = (crystalOre * buffCoefficient).toInt()
+        bonusIronOre = (ironOre * buffCoefficient).toInt()
     }
 
     println("Кристаллическая руда: $bonusCrystalOre")
