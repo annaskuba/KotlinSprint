@@ -9,7 +9,7 @@ const val PERCENT_FORMATTER = 100
 
 fun main() {
 
-    val interestRate: Double = INTEREST_RATE_PERCENTAGE / PERCENT_FORMATTER
+    val interestRate: Double = INTEREST_RATE_PERCENTAGE.toDouble() / PERCENT_FORMATTER
     val initialSum = 70000
     val years = 20
 
