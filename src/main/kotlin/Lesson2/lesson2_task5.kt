@@ -4,12 +4,12 @@ import kotlin.math.pow
 import java.util.Locale
 
 const val INTEREST_RATE_PERCENTAGE = 16.7
-const val PERCENT_FORMATTER = 100
+const val PERCENT = 100
 
 
 fun main() {
 
-    val interestRate: Double = INTEREST_RATE_PERCENTAGE.toDouble() / PERCENT_FORMATTER
+    val interestRate: Double = INTEREST_RATE_PERCENTAGE.toDouble() / PERCENT
     val initialSum = 70000
     val years = 20
 
